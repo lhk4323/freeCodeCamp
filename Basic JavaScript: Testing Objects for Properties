@@ -8,7 +8,7 @@ var myObj = {
 function checkObj(checkProp) {  //function checkObj drags the argument "gift" from the func call in line 22 to the parameter checkProp
   
   if (myObj.hasOwnProperty(checkProp) == true) {  // this looks up the var myObj.hasOwnProperty method(value = "gift") to see if it's true or false
-    return myObj[checkProp];    
+    return myObj[checkProp];    //why does return myObj.checkProp not work?  Why does it need to be in brackets?
   }
   else {
       return "Not Found"

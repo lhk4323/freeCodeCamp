@@ -5,9 +5,9 @@ var myObj = {
   bed: "sleigh"
 };
 
-function checkObj(checkProp) {
+function checkObj(checkProp) {  //function checkObj drags the argument "gift" from the func call in line 22 to the parameter checkProp
   
-  if (myObj.hasOwnProperty(checkProp) == true) {
+  if (myObj.hasOwnProperty(checkProp) == true) {  // this looks up the var myObj.hasOwnProperty method(value = "gift") to see if it's true or false
     return myObj[checkProp];    
   }
   else {
@@ -20,3 +20,7 @@ function checkObj(checkProp) {
 
 // Test your code by modifying these values
 checkObj("gift");
+
+
+//Function parameters are the names listed in the function definition.
+//Function arguments are the real VALUES passed to (and received by) the function.
